@@ -1,0 +1,202 @@
+/* common.css */
+
+@font-face{font-family: 'Jeju Gothic', sans-serif;
+  src: url('https://fonts.googleapis.com/earlyaccess/jejugothic.css') format('css'); font-weight: normal; font-style: normal;}
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul { list-style-type: none;}
+html, body {
+  height: 100%;
+}
+body {
+  color: #222;
+  /* font-family: 'Belleza', sans-serif; */
+  /* font-family: 'Jeju Gothic', sans-serif; */
+    font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.8;
+  font-size: 100%;
+  min-width: 100%;
+}
+h1, h2, h3, h4 {
+  font-family: 'Jeju Gothic', sans-serif;
+  margin-bottom: 20px;
+}
+.title h2 { font-family: 'Jeju Gothic', sans-serif; }
+h2 { font-size: 32px;}
+ins{ text-decoration: none;}
+button { 
+  background: none;
+  border: none;
+  outline: none;
+}
+section {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#main_header {
+  position: absolute;
+  color: #444;
+  width: 100%;  
+  font-weight: bold;
+
+}
+
+#title {
+  height: 100%;
+  /* background-image: url("../images/title_bg.jpg"); */
+  background: #ccc;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-shadow: 1px 1px 6px #444;
+  margin-bottom: 50px;
+}
+
+#title .title {
+  /* outline: 1px solid red; */
+  position: absolute;
+  width: 80%;
+  left: 50%; top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+#title .title > h2 {
+  font-size: 80px;
+  margin-bottom: 0px;
+}
+#event .title > h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+#title .title > p,
+#event .title > p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+.cta {
+  width: 140px; height: 50px;
+  background: #222222;
+  font-size: 16px;
+  line-height: 50px;
+  display: inline-block;
+  border-radius: 4px;
+  transition: .4s;
+}
+.cta:hover {
+  background: rgba(34,34,34, 0.9);
+}
+.bx-wrapper {
+  border: none;
+}
+#about{
+  margin: 150px 0;
+}
+#about .container{
+  /* 소개글 좌우 여백을 두어 집중하게 배치 */
+  /* padding-left: 10%; */
+  /* padding-right: 10%; */
+  text-align: left;
+  font-size: 18px;
+}
+
+#about h3{
+  font-size: xx-large;
+  margin-top: 30px;
+
+}
+
+.product_list .title{
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+/* 이벤트 섹션 */
+#event {
+  position: relative;
+  height: 400px;
+  background: #ccc;
+  /* background-image: url("http://placeimg.com/1920/1080/people/grayscale"); */
+  background-image: url('../images/event_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 50px 0;
+}
+#event .title {
+  width: 70%;
+  /* outline: 1px solid red; */
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0,0,0, 0.7);
+}
+
+/* news 섹션 */
+#news article {
+  height: 300px;
+  margin-bottom: 20px;
+  color: #fff;
+  display: flex; /* flex layout 설정 */
+}
+#news article {
+  align-items: center; /* 수직 중앙정렬 */
+  justify-content: center; /* 수평 중앙정렬 */
+}
+#news article h2{
+  /* outline: 1px solid red; */
+  text-shadow: 1px 1px 4px #444;
+}
+#news article:first-child {
+  background-image: url("../images/holidays.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#news article:last-child {
+  background-image: url("../images/must-have.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* bxslider */
+#sns .slider {
+  width: 100%;
+}
+.slider img {
+  /* width: 100%; */
+}
+
+#main_footer{
+  padding: 70px 0;
+  color: #444;
+  background: #e4e4e4;
+  text-align: center;
+  font-size: smaller;
+  font-weight: bold;
+}
+#main_footer .info{
+  /* min-width: 578px; */
+  font-weight: normal;
+  font-size: small;
+}
+#main_footer .sns_list{
+  margin: 30px;
+}
+#main_footer .sns_list li{
+  display: inline-block;
+  margin: 0 15px;
+}
+
+#main_footer #f_logo{
+  height: 30px;
+  margin-bottom: 30px;
+}
