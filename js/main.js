@@ -1,8 +1,34 @@
 // main.js
 
-
 // banner
-$(document).ready(function(){
+$(document).ready(function () {
+
+  // circle
+  $('.ps').circleProgress({
+    value: 0.90,
+    fill: { gradient: [['#1b5697', 1], ['#063468', 1]], gradientAngle: Math.PI / 4 }
+  });
+  $('.ai').circleProgress({
+    value: 0.85,
+    fill: { gradient: [['#e67927', 1], ['pink', 1]], gradientAngle: Math.PI / 4 }
+  });
+  $('.html').circleProgress({
+    value: 0.77,
+    fill: { gradient: [['#e55629', 1], ['pink', 1]], gradientAngle: Math.PI / 4 }
+  });
+  $('.css').circleProgress({
+    value: 0.78,
+    fill: { gradient: [['#29acdc', 1], ['pink', 1]], gradientAngle: Math.PI / 4 }
+  });
+  $('.jq').circleProgress({
+    value: 0.70,
+    fill: { gradient: [['#e5a328', 1], ['pink', 1]], gradientAngle: Math.PI / 4 }
+  });
+  $('.oa').circleProgress({
+    value: 0.90,
+    fill: { gradient: [['#91cf4d', 1], ['pink', 1]], gradientAngle: Math.PI / 4 }
+  });
+
   $('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -39,20 +65,20 @@ function goto_scroll(move_top) {
     .animate({ scrollTop: move_top + "px" }, 800);
 }
 
-$(function() {
+$(function () {
   // gnb 이벤트
   var link = document.querySelectorAll("#gnb a");
   for (let i = 0; i < link.length; i++) {
-    link[i].addEventListener("click", function() {
+    link[i].addEventListener("click", function () {
       var top = document.querySelector(link[i].hash).offsetTop;
       goto_scroll(top);
       // 인디케이터 업데이트
       update_pager(i);
     });
   }
-  
+
   // 우측 인디케이터 이벤트
-  $("#pager li a").click(function() {
+  $("#pager li a").click(function () {
     $("#pager li").removeClass("on");
     $(this).parent().addClass("on");
     var top = $(this.hash).offset().top;
@@ -60,7 +86,7 @@ $(function() {
   });
 
   // 인디케이터 업데이트 함수
-  function update_pager(page_num){
+  function update_pager(page_num) {
     console.log(page_num);
     $("#pager li").removeClass("on");
     $('#pager li')
@@ -71,20 +97,20 @@ $(function() {
   // scroll 이벤트
   var s = $('section').length;
   var sec_top_y = [];
-  for(var i = 0; i < s; i++){
+  for (var i = 0; i < s; i++) {
     sec_top_y[i] = $('section').eq(i).offset().top;
     console.log(sec_top_y)
   }
 
-  $(window).scroll(function(){
+  $(window).scroll(function () {
     var top = $(this).scrollTop();
-    if(top >= sec_top_y[0]){
+    if (top >= sec_top_y[0]) {
       update_pager(0);
     }
-    if(top >= sec_top_y[1]){
+    if (top >= sec_top_y[1]) {
       update_pager(1);
     }
-    if(top >= sec_top_y[2]){
+    if (top >= sec_top_y[2]) {
       update_pager(2);
     }
 
@@ -95,14 +121,14 @@ $(function() {
 
 
 // 모바일에서 스크롤이 맨 위일때 배경 지우기
-$(function(){
-  $(window).scroll(function() {
+$(function () {
+  $(window).scroll(function () {
     if ($(this).scrollTop()) {
       $('#main_header h1').addClass('nav_bg');
     } else {
       $('#main_header h1').removeClass('nav_bg');
     }
-  });  
+  });
 });
 
 
