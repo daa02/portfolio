@@ -1,9 +1,18 @@
 // main.js
 
-// banner
+
 $(document).ready(function () {
 
-  // circle
+  // fullPage-bg
+  var myFullpage = new fullpage('#fullpage', {
+    anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage'],
+    sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C', '#C63D0F', '#1BBC9B', '#7E8F7C', '#1BBC9B'],
+    navigation: true,
+    navigationPosition: 'right',
+    navigationTooltips: ['First page', 'Second page', 'Third and last page']
+  });
+
+  // web-circle
   $('.ps').circleProgress({
     value: 0.90,
     fill: { gradient: [['#1b5697', 1], ['#063468', 1]], gradientAngle: Math.PI / 4 }
@@ -29,6 +38,7 @@ $(document).ready(function () {
     fill: { gradient: [['#91cf4d', 1], ['pink', 1]], gradientAngle: Math.PI / 4 }
   });
 
+  // banner
   $('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
