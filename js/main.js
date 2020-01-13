@@ -3,10 +3,30 @@
 
 $(document).ready(function () {
 
+  // detail_tab
+  $('#app2>.detail_tab > ul > .tab1').bind('click',function(){
+    $('#app2>.detail_img > img').attr({src:'images/g_detail.jpg',alt:'봄'});
+    });
+  $('#app2>.detail_tab > ul > .tab2').bind('click',function(){
+    $('#app2>.detail_img > img').attr({src:'images/m_detail.jpg',alt:'여름'});
+    });
+  $('#app3>.detail_tab > ul > .tab1').bind('click',function(){
+    $('#app3>.detail_img > img').attr({src:'images/w_detail.jpg',alt:'봄'});
+    });
+  $('#app3>.detail_tab > ul > .tab2').bind('click',function(){
+    $('#app3>.detail_img > img').attr({src:'images/w2_detail.png',alt:'여름'});
+    });
+  $('#app4>.detail_tab > ul > .tab1').bind('click',function(){
+    $('#app4>.detail_img > img').attr({src:'images/t_detail.jpg',alt:'봄'});
+    });
+  $('#app4>.detail_tab > ul > .tab2').bind('click',function(){
+    $('#app4>.detail_img > img').attr({src:'images/p_detail.jpg',alt:'여름'});
+    });
+
   // fullPage-bg
   var myFullpage = new fullpage('#fullpage', {
     anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage'],
-    sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C', '#C63D0F', '#1BBC9B', '#7E8F7C', '#1BBC9B'],
+    sectionsColor: ['#c7d0621c', '#c7d0621c', '#c7d0621c', '#c7d0621c', '#c7d0621c', '#c7d0621c', '#c7d0621c'],
     navigation: true,
     navigationPosition: 'right',
     navigationTooltips: ['First page', 'Second page', 'Third and last page']

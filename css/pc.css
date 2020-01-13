@@ -1,6 +1,6 @@
 /* pc.css */
 .container {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   max-width: 1200px; /* 가변 최대 1200px */
   margin: 0 auto;
   overflow: hidden;
@@ -14,6 +14,7 @@ header{
   /* position: relative; */
   background: #ccc;
 }
+
 header .logo{
   padding-left: 25px;
   font-size: 18px;
