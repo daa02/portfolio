@@ -435,6 +435,21 @@ section {
   padding-left: 30px;
   margin-top: 30px;
 }
+#section5 .left{
+  /* width: 450px; */
+  float: left;
+  /* padding-left: 30px; */
+  margin-top: 50px;
+  text-align: left;
+}
+#section5 .left li{
+  margin-top: 10px;
+}
+#section5 .left strong{
+  width: 100px;
+    display: table-cell;
+    padding-right: 20px;
+}
 #section4 .right{
   /* width: 60%; */
   padding: 0 50px;
@@ -475,7 +490,22 @@ section {
   background: #222;
   /* display: none; */
 }
+#section5 .left li:last-of-type span i:first-of-type{
+  background: #b490ca;
+}
+#section5 .left li:last-of-type span i:last-of-type{
+  background: #60e4de;
+}
 #section4 .left li:last-of-type span i{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  text-indent: -9999px;
+  margin-right: 7px;
+  transform: translateY(5px);
+}
+#section5 .left li:last-of-type span i{
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -508,7 +538,9 @@ section {
   position: relative;
   overflow: hidden;
   width: 780px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  float: left;
+  margin: 0 50px;
 }
 #app1>img{
   width: 780px;
