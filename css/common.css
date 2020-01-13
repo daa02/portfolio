@@ -193,6 +193,7 @@ section {
 #about .right span{
   background: #c7d062;
   font-weight: bold;
+  padding: 0 5px;
 }
 
 /* skill */
