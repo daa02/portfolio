@@ -5,22 +5,22 @@ $(document).ready(function () {
 
   // detail_tab
   $('#app2>.detail_tab > ul > .tab1').bind('click',function(){
-    $('#app2>.detail_img > img').attr({src:'images/g_detail.jpg',alt:'봄'});
+    $('#app2>.detail_img > img').attr({src:'images/g_detail.jpg',alt:'샤인 청포도'});
     });
   $('#app2>.detail_tab > ul > .tab2').bind('click',function(){
-    $('#app2>.detail_img > img').attr({src:'images/m_detail.jpg',alt:'여름'});
+    $('#app2>.detail_img > img').attr({src:'images/m_detail.jpg',alt:'직수입 화장품'});
     });
   $('#app3>.detail_tab > ul > .tab1').bind('click',function(){
-    $('#app3>.detail_img > img').attr({src:'images/w_detail.jpg',alt:'봄'});
+    $('#app3>.detail_img > img').attr({src:'images/w_detail.jpg',alt:'모바일 청첩장'});
     });
   $('#app3>.detail_tab > ul > .tab2').bind('click',function(){
-    $('#app3>.detail_img > img').attr({src:'images/w2_detail.png',alt:'여름'});
+    $('#app3>.detail_img > img').attr({src:'images/w2_detail.png',alt:'모바일 청첩장'});
     });
   $('#app4>.detail_tab > ul > .tab1').bind('click',function(){
-    $('#app4>.detail_img > img').attr({src:'images/t_detail.jpg',alt:'봄'});
+    $('#app4>.detail_img > img').attr({src:'images/t_detail.jpg',alt:'수능 세트'});
     });
   $('#app4>.detail_tab > ul > .tab2').bind('click',function(){
-    $('#app4>.detail_img > img').attr({src:'images/p_detail.jpg',alt:'여름'});
+    $('#app4>.detail_img > img').attr({src:'images/p_detail.jpg',alt:'체육대회 '});
     });
 
   // fullPage-bg
