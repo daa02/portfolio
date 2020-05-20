@@ -576,3 +576,7 @@ section {
   width: 400px;
   height: auto;
 }
+
+#pdf_link{
+  margin: 0 auto;
+}
