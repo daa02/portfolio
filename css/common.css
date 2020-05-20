@@ -578,5 +578,17 @@ section {
 }
 
 #pdf_link{
-  margin: 0 auto;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: 1.2px solid #707e6c;
+    background: beige;
+    border-radius: 10px;
+}
+#pdf_link:hover{
+    background: #666;
+    color: beige;
+}
+
+#section6 p:last-of-type {
+    margin-top: 50px;
 }
